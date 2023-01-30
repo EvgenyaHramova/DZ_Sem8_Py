@@ -7,13 +7,14 @@ ingredients = [coffee_beans, milk, cream]
 print(ingredients)  # [1, 2, 3]
 
 
-coffee_recipe = {'Эспрессо': [1, 0, 0], 'Капучино': [1, 3, 0], 'Маккиато': [2, 1, 0], 'Кофе по-венски': [1, 0, 2], 'Латте Маккиато': [1, 2, 1], 'Кон Панна': [1, 0, 1]}
+coffee_recipe = {'Эспрессо': [1, 0, 0], 'Капучино': [1, 3, 0], 'Маккиато': [
+    2, 1, 0], 'Кофе по-венски': [1, 0, 2], 'Латте Маккиато': [1, 2, 1], 'Кон Панна': [1, 0, 1]}
 
 preference = input(
     'Какие рецепты кофе предпочитаете? Назовите в порядке убывания предпочтений:  ').split(', ')
 print(preference)  # ['Кон Пана', 'Капучинно', 'Эспрессо']
 
-
+# def choose_coffee(preference):
 for i in preference:
     for key in coffee_recipe:
         if key == i:
@@ -25,25 +26,12 @@ for i in preference:
                     k += 1
                 ingredients = ing
                 print(ingredients)
-                print(i)    
+                print(i)
+                # if x > ingredients:
+                #     print('Извините, нет достаточного количества ингредиентов для приготовления', key)
 
-print('Извините, нет достаточного количества ингредиентов для приготовления', i)
+# print(choose_coffee)
 
-
-
-
-
-# for key in coffee_recipe:
-#     if key == preference:
-#         x = coffee_recipe.get(preference)
-#         print(x)
-#         if x > ingredients:
-#             print("Извините, достаточного количества ингредиентов для приготовления данного рецепта нет.")
-#         else:
-#             print('Пожалуйста, ваш кофе!')
-    
-
-         
 
 # ingredients = [2,4,3]
 # def choose_coffee (*args):
@@ -79,13 +67,11 @@ print('Извините, нет достаточного количества и
 # print(choose_coffee('Капучино', 'Маккиато', 'Эспрессо'))
 
 
-
-
 # ingredient = {'Эспрессо': [1, 0, 0], 'Капучино': [1, 3, 0],
 #               'Маккиато': [2, 1, 0], 'Кофе по-венски': [1, 0, 2],
 #               'Латте Маккиато': [1, 2, 1], 'Кон Панна': [1, 0, 1]}
- 
- 
+
+
 # def choose_coffee(preferences):
 #     for i in preferences:
 #         if ingredient[i][0] <= ingredients[0] and ingredient[i][1] <= ingredients[1] and ingredient[i][2] <= ingredients[2]:
@@ -94,10 +80,9 @@ print('Извините, нет достаточного количества и
 #             ingredients[2] -= ingredient[i][2]
 #             return i
 #     return 'К сожалению, не можем предложить Вам напиток'
- 
- 
+
+
 # ingredients = [10, 10, 10]
 # print(choose_coffee('Кон Панна, Эспрессо, Капучино, Маккиато, Кофе по-венски, Латте Маккиато '.split(', ')))
 # print(choose_coffee("Капучино, Маккиато, Эспрессо".split(", ")))
 # print(choose_coffee("Капучино, Маккиато, Эспрессо".split(", ")))
-
