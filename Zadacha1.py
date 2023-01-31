@@ -15,11 +15,13 @@ for i in preference:
     for key in coffee_recipe:
         if key == i:
             x = coffee_recipe.get(key)
-            if ingredients < x:
-                print('Извините, нет достаточного количества ингредиентов для приготовления', key)
-            if ingredients >= x:    
+            if x[0] <= ingredients
+            for j in range(len(ingredients)):
+                while x[j] <= ingredients[j]:
+                    j+=1
+                print(i)
                 ing = []
-                for k in range(0, len(ingredients)):
+                for k in range(len(ingredients)):  
                 
                     if ingredients[k] < x[k]:
                         ing.append(ingredients[k])
@@ -27,11 +29,11 @@ for i in preference:
                     else:
                         ing.append(ingredients[k] - x[k])
                         k += 1
-            ingredients = ing
-            print(i)
+                ingredients = ing
+                   
             
-            print(ingredients)
-            
+                print(ingredients)
+            print('Извините, нет достаточного количества ингредиентов для приготовления', key)
             
 
             
