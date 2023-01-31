@@ -27,8 +27,9 @@ for i in preference:
                     else:
                         ing.append(ingredients[k] - x[k])
                         k += 1
-                ingredients = ing
+            ingredients = ing
             print(i)
+            
             print(ingredients)
             
             
@@ -56,11 +57,3 @@ for i in preference:
     #         ingredients = ing
     #         print(ingredients)
 
-# def choose_coffee(preference):
-#     for i in preference:
-#         if coffee_recipe[i][0] <= ingredients[0] and coffee_recipe[i][1] <= ingredients[1] and coffee_recipe[i][2] <= ingredients[2]:
-#             ingredients[0] -= coffee_recipe[i][0]
-#             ingredients[1] -= coffee_recipe[i][1]
-#             ingredients[2] -= coffee_recipe[i][2]
-#             return i
-#     return 'К сожалению, не можем предложить Вам напиток'
